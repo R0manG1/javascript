@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CW3.3 - Цикл for</title>
+    <style>
+        .users {
+            width: 300px;
+            display: flex;
+            justify-content: space-between;
+            border: 2px solid black;
+            margin: 10px;
+            padding: 10px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+<script>
+    let users = [
+        {name: 'Olia', age: 23, status: 'active'},
+        {name: 'Victor', age: 23, status: 'not active'},
+        {name: 'Igor', age: 25, status: 'active'},
+        {name: 'Jane', age: 23, status: 'active'},
+        {name: 'Nicola', age: 31, status: 'not active'},
+        {name: 'Boris', age: 23, status: 'active'},
+        {name: 'Kate', age: 27, status: 'not active'},
+        {name: 'Rim', age: 34, status: 'active'}
+    ]
+    for (let i = 0; i < users.length; i++) {
+        let user = users[i];
+        document.write(`
+                        <div class="users">
+                            <span>${user.name}</span>
+                            <span>${user.age}</span>
+                            <span>${user.status}</span>
+                        </div>`)
+    }
+</script>
+</body>
+</html>
