@@ -8,7 +8,7 @@ console.log(s.toUpperCase());
 console.log(s.toLowerCase());
 console.log(str.startsWith('Hel'));
 console.log(str.endsWith('ld!'));
-str.substring(0, 5);
+console.log(str.substring(0, 5));
 console.log(str.substring(5));
 console.log(str.indexOf('W'));
 console.log(str.lastIndexOf('l'));
@@ -18,7 +18,7 @@ console.log(str.replace('l', '!'));
 console.log(str.replaceAll('Hello', '!'));
 let split = str.split(' ');
 console.log(split);
-console.log(str.includes('World!'));
+console.log(str.includes('Hello'));
 
 // let name = prompt('Enter your name');
 // if (!name.startsWith('R')){

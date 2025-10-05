@@ -11,42 +11,42 @@ let volleyballTeam = [
     {name: "Roman", position: "opposite", height: 194, age: 23}
 ];
 
-// volleyballTeam.forEach(function (player, index, array){
-//     console.log(player);
-// })
+volleyballTeam.forEach(function (player, index, array){
+    console.log(player);
+})
 
-// volleyballTeam.forEach(player => {
-//     if (player.height > 190) console.log(player);
-// });
+volleyballTeam.forEach(player => {
+    if (player.height > 190) console.log(player);
+});
 
-// volleyballTeam.forEach(player => {
-//     if (player.position.startsWith('set')) console.log(player);
-// });
+volleyballTeam.forEach(player => {
+    if (player.position.startsWith('set')) console.log(player);
+});
 
-// let filteredPlayers = volleyballTeam.filter(player => player.age > 23);
-// console.log(filteredPlayers);
+let filteredPlayers = volleyballTeam.filter(player => player.age > 23);
+console.log(filteredPlayers);
 
-// let filteredPlayers2 = volleyballTeam.filter((player, index) => index > 5);
-// console.log(filteredPlayers2);
+let filteredPlayers2 = volleyballTeam.filter((player, index) => index > 5);
+console.log(filteredPlayers2);
 
 // let filteredPlayers2 = volleyballTeam.filter((player, index) => player.name.startsWith("I"));
 // console.log(filteredPlayers2);
 
 
-// let newTeam = volleyballTeam.map(function (player, index){
-//     let newPlayer = {
-//         id: index + 1,
-//         name: player.name,
-//         position: player.position,
-//         height: player.height,
-//         age: player.age
-//     }
-//     return newPlayer;
-// });
-
-let newTeam = volleyballTeam.map((player, index) => {
-    return {id: index + 1, ...player};
+let newTeam = volleyballTeam.map(function (player, index){
+    let newPlayer = {
+        id: index + 1,
+        name: player.name,
+        position: player.position,
+        height: player.height,
+        age: player.age
+    }
+    return newPlayer;
 });
+//
+// let newTeam = volleyballTeam.map((player, index) => {
+//     return {id: index + 1, ...player};
+// });
 console.log(newTeam);
 
 let findByName = newTeam.find(player => player.name === 'Dmytro');
