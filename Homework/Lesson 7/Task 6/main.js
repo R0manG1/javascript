@@ -1,3 +1,4 @@
+//#5kla3yMpgp – (Те саме, тільки через клас)
 class Car {
     constructor(model, manufacturer, year, maxSpeed, engineVolume){
         this.model = model;
@@ -29,4 +30,9 @@ class Car {
 }
 
 let car = new Car('Model S Plaid', 'Tesla', 2023, 322, 0);
-
+car.drive();
+car.info();
+car.increaseMaxSpeed(100);
+car.changeYear(2024);
+car.addDriver({name: 'Roman', age: 26, experience: '7 years'});
+console.log(car);

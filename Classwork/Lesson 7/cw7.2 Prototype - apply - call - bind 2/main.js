@@ -34,16 +34,16 @@
 //Prototype - метод для розщирення конструктора (додавання нових функцій)
 // prototype — спільні методи для всіх об’єктів конструктора.
 
-// User.prototype.greeting = function () {
-//     return `Hello, my name is ${this.name}, from ${this.city}`;
-// }
-//
-// let user1 = new User('Egor', '34', 'Kiev');
-// let user2 = new User('Vlad', '23', 'Lviv');
-// console.log(user1);
-// console.log(user2);
-// console.log(user1.greeting());
-// console.log(user2.greeting());
+User.prototype.greeting = function () {
+    return `Hello, my name is ${this.name}, from ${this.city}`;
+}
+
+let user1 = new User('Egor', '34', 'Kiev');
+let user2 = new User('Vlad', '23', 'Lviv');
+console.log(user1);
+console.log(user2);
+console.log(user1.greeting());
+console.log(user2.greeting());
 
 // Методи call, apply і bind — використовуються для зміни контексту this: call/apply викликають функцію одразу,
 // а bind створює її копію з закріпленим контекстом для подальшого виклику.

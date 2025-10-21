@@ -19,7 +19,7 @@ const users = [
     new User(8, 'Maxim', 'Platonov', 'maxon77@protonmail.com', '+380684422123'),
     new User(9, 'Roman', 'Jurchenko', 'jurrom@nmail.com', '+380694733612'),
     new User(10, 'Bogdan', 'Samoilov', 'bogdanchik@gmail.com', '+380989433916')
-]
+];
 
 console.log(users);
 

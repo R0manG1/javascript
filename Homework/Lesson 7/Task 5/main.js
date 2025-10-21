@@ -42,5 +42,9 @@ function Car(model, manufacturer, year, maxSpeed, engineVolume) {
 }
 
 let car = new Car('Civic Type R', 'Honda', 2022, 272, 2.0);
-console.log(car);
+car.drive();
+car.info();
+car.increaseMaxSpeed(100);
+car.changeYear(2023);
 car.addDriver({name: 'Roman', age: 26, experience: '7 years'});
+console.log(car);
